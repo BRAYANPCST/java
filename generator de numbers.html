@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generador de número al azar</title>
+</head>
+<body>
+    <h1>Generador de número al azar</h1>
+    <p>Haga clic en el botón para generar un número al azar del 1 al 99:</p>
+    <button onclick="generarNumero()">Generar número</button>
+    <p id="numeroGenerado"></p>
+
+    <script>
+        function generarNumero() {
+            let numero = Math.floor(Math.random() * 99) + 1;
+            document.getElementById("numeroGenerado").innerHTML = "El número generado es: " + numero;
+        }
+    </script>
+</body>
+</html>
